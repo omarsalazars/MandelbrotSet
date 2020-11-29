@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <math.h>
 
-double width=700;height=700;
+double width=700,height=700;
 double xMin=-2.5,xMax=2.5;
 double yMin=-2.5,yMax=2.5;
 double Cx,Cy,escapeRatio=2.0;
@@ -25,7 +25,7 @@ void Mandelbrot()
             ALLEGRO_COLOR pixelColor=al_map_rgb(0,0,0);
             Cx=xMin+x*PWidth;
             c=Cy+Cx*I;
-            z=c; //
+            z=c;
             int iteracion;
             for(iteracion=0;iteracion<MaxIterations &&
             (creall(z)*creall(z))+(cimagl(z)*cimagl(z))<escapeRatio*escapeRatio;iteracion++)
@@ -68,12 +68,15 @@ int main(int argc, char **argv){
 
     Mandelbrot();
 
+    al_set_new_display_flags(ALLEGRO_WINDOWED);
     al_flip_display();
 
+	while(true){
+	}
 
-    al_rest(10000.0);
+    //al_rest(10000.0);
 
-    al_destroy_display(display);
+    //al_destroy_display(display);
 
     return 0;
 }
