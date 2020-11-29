@@ -1,6 +1,9 @@
 # MandelbrotSet
 A program to graph fractal sets developed in C++ using Allegro5.
 
+## Dependencies
+* Allegro5
+
 ## Run
 ```
 git clone git@github.com:omarsalazars/MandelbrotSet.git
