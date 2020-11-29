@@ -1,5 +1,5 @@
 # MandelbrotSet
-A program to graph fractal sets developed in C++ using Allegro5. To run in windows: https://www.youtube.com/watch?v=Dz-RbYk3zJo<br>
+A program to graph fractal sets developed in C++ using Allegro5.
 
 ## Run
 ```
